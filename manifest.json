@@ -1,0 +1,13 @@
+{
+  "id": "omni-secrets-scan",
+  "name": "Omni Secrets Scan",
+  "description": "Scan codebases for hardcoded secrets, API keys, passwords, and sensitive credentials using pattern detection.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["security", "scanning", "secrets", "audit"],
+  "repo": "https://github.com/GraysonBannister/omni-secrets-scan",
+  "download": "https://github.com/GraysonBannister/omni-secrets-scan/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
