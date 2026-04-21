@@ -17,7 +17,7 @@ const SECRET_PATTERNS = [
   { name: 'JWT Token', regex: /eyJ[a-zA-Z0-9_-]*\.eyJ[a-zA-Z0-9_-]*\.[a-zA-Z0-9_-]*/g },
   { name: 'Stripe Key', regex: /sk_live_[0-9a-zA-Z]{24,}/g },
   { name: 'Basic Auth', regex: /basic\s+[a-zA-Z0-9=+/]{10,}/gi },
-  { name: 'Connection String', regex: /(mongodb|mysql|postgres|postgresql|redis|amqp)://[^:]+:[^@]+@/gi },
+  { name: 'Connection String', regex: new RegExp('(mongodb|mysql|postgres|postgresql|redis|amqp)://[^:]+:[^@]+@', 'gi') },
 ];
 
 async function findFiles(dir, excludePatterns) {
